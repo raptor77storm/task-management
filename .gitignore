@@ -1,23 +1,28 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
+﻿# Dependencies
+node_modules/
+.pnp/
 .pnp.js
 
-# testing
-/coverage
+# Frontend build output
+build/
+.taskmanagement-ui/build/
+taskmanagement-ui/build/
+coverage/
 
-# production
-/build
+# .NET build/publish output
+bin/
+obj/
+app/
+TaskManagement.API/bin/
+TaskManagement.API/obj/
+TaskManagement.API/wwwroot/
 
-# misc
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+*.zip
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+.vs/
+.vscode/
